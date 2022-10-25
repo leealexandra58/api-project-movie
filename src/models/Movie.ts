@@ -1,10 +1,12 @@
 
 
-export interface Movies{
+export interface Movie{
     title: string;
     release_date: string;
     genre: Genre[];
     vote_average: number;
+    backdrop_path: string;
+    id: number
 
 
 }
