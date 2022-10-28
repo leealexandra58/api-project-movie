@@ -1,0 +1,24 @@
+body{
+    background-color: #23252b;
+    color: white;
+}
+ 
+button{
+    background-color: #f47521;
+    border-color: #23252b;
+    margin-bottom: 20px;
+}
+ 
+.votes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+ 
+.movieDisplay button {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+   
+}

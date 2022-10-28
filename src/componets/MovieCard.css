@@ -1,0 +1,8 @@
+.MovieCard{
+    display:flex;
+    flex-wrap: wrap;
+}
+ 
+div{
+    margin: 22.2px;
+}
