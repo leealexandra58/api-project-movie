@@ -1,11 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Search from './componets/Search';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Header from './componets/Header';
-import MovieList from './componets/MovieList';
 
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+// import Header from './componets/Header';
+import MovieList from './componets/MovieList';
+// import Filter from './componets/Filter';
+// import  SearchMovie from './componets/SearchMovie';
+// import FilterMovie from './componets/Filter';
 
 
 function App() {
@@ -13,10 +15,13 @@ function App() {
     <div className="App">
       <Router>
         
-        <Header></Header>
+        <MovieList></MovieList>
+      
+        
         <Routes>
-          <Route path="/" element={<MovieList/>}/>
+       
           
+
   {/* <Search></Search> */}
       </Routes>
     </Router>
