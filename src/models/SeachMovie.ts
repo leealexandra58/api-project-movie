@@ -15,6 +15,7 @@ export interface Result {
     overview: string;
     release_date: string;
     title: string;
+    id: number;
 }
 
 export interface Genre{

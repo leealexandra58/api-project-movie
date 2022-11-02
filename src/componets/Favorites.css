@@ -1,0 +1,46 @@
+.remove-btn {
+    border: transparent;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    cursor: pointer;
+    color:  white;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.remove-btn:hover {
+    color:  rgb(255, 123, 0);
+    background-color: rgb(110, 100, 100);
+    box-shadow: rgb(118, 109, 109) 0px 1px 4px;
+    border-radius: 2px;
+}
+
+.favorite-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-title {
+    padding: 10px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.img-title:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Favorites {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+}
+
+.remove-text {
+    margin-left: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

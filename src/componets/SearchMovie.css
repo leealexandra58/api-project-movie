@@ -1,0 +1,17 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+}
+
+.searchForm {
+    margin: 40px;
+}
+
+.searchInput {
+    height: 30px;
+    width: 300px;
+    font-size: 15px;
+    border: transparent;
+}
