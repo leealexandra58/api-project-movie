@@ -1,0 +1,50 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(192, 193, 196, 0.955) 0px 10px 10px -10px;
+    text-decoration: overline;
+}
+
+
+.home-button, .fav-button, .search-button {
+    background-color: transparent;
+    color: rgb(255, 123, 0);
+    border: transparent;
+    cursor: pointer;
+    margin: 20px 15px 12px 15px;
+}
+
+.home-button:hover, .fav-button:hover, .search-button:hover {
+    transform: scale(1.3);
+    box-shadow: rgba(192, 193, 196, 0.955) 0px 7px 29px 0px;
+    border-radius: 2px;
+    background-color: rgb(77, 71, 71);
+}
+
+.home-button:active, .fav-button:active, .search-button:active {
+    transform: scale(1);
+}
+
+.fav-button {
+    margin-right: 40px;
+}
+
+.nav-btns {
+    display: flex;
+}
+
+.fav-text {
+    font-size: 13px;
+    margin-right: 20px;
+    text-decoration: overline;
+}
+
+.home-text, .fav-text, .search-text {
+    font-size: 13px;
+    text-decoration: overline;
+}
+
+
+.title {
+    margin-left: 20px;
+}

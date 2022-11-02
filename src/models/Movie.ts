@@ -13,4 +13,3 @@ export interface Movie{
     vote_count: number;
     overview:string;
 }
- 

@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Header from './componets/Header';
+// import Header from './componets/Header';
 import MovieDisplay from "./componets/MovieDisplay";
 import { Movie } from './models/Movie';
 import {  getTopRated } from './services/MovieApi';
+import SearchMovie from './componets/SearchMovie';
+import Header from './componets/Header';
+import FavoritePage from './componets/FavoritePage';
+// import Filter from './componets/Filter';
+// import  SearchMovie from './componets/SearchMovie';
+// import FilterMovie from './componets/Filter';import MovieCard from './componets/MovieCard';
 import MovieCard from './componets/MovieCard';
- 
  
 function App() {
  
@@ -71,11 +76,16 @@ function App() {
   return (
     <div className="App">
       <Router>
+        
         <Header></Header>
-        <Routes>
+        
+      <Routes>
           <Route path="/" element={<MovieCard movieList={topRated} genreName={genreName}/>}/>
+        <Route path='/search' element={<SearchMovie></SearchMovie>}/>
+        <Route path="/favorites" element={<FavoritePage/>}/>
           <Route path="/moviedisplay/:id" element={<MovieDisplay movieList={topRated} genreName={genreName}/>}/>
       </Routes>
+
     </Router>
     </div>
   );
