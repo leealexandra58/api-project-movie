@@ -22,3 +22,9 @@ button{
     top: 10px;
    
 }
+
+.genres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

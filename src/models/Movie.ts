@@ -1,11 +1,12 @@
 export interface MovieCardProps{
     movieList: Movie[];
+    genreName: (genre_ids: number) => string;
 }
  
 export interface Movie{
     title: string;
     release_date: string;
-    genre: Genre[];
+    genre_ids: number[];
     vote_average: number;
     backdrop_path: string;
     id: number
@@ -13,7 +14,3 @@ export interface Movie{
     overview:string;
 }
  
-export interface Genre{
-    id: number;
-    name: string;
-}
