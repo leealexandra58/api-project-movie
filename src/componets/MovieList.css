@@ -2,6 +2,7 @@ img {
     width: 100px;
     height: 100px;
     border: white solid 1px;
+
 }
 
 img:active {
@@ -9,7 +10,7 @@ img:active {
 }
 
 .movie-card {
-    padding: 10px;
+    padding: 30px;
     transition: transform 0.5s ease;
     position: relative;
 }
@@ -17,6 +18,7 @@ img:active {
 
 .MovieList {
     display: flex;
+    justify-content: center ;
     flex-wrap: wrap;
     padding: 10px;
     align-items: center;
@@ -36,6 +38,17 @@ img:active {
     text-align: center;
     font-size: 12px;
 }
+
+h2{
+    font-size: 40px;
+    text-align: left;
+    color: #f47521;
+    padding-bottom: 8px;
+    background-image: linear-gradient(to right,#213944,#2abdbb);
+    padding-left: 20px;
+}
+
+
 
 @media screen and (min-width: 1200px) {
 

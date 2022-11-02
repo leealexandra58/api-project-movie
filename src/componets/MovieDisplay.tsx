@@ -11,7 +11,6 @@ export default function Moviedisplay({movieList, genreName}:MovieCardProps) {
  
   return(
     <div className="movieDisplay">
-      <Link to="/"><button>Back to home</button></Link>
       <img  src= {`https://image.tmdb.org/t/p/original`+ movie?.backdrop_path} alt="Movie Cover"/>
       <p>{movie?.title}</p>
       <div className="votes">

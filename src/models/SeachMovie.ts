@@ -1,4 +1,7 @@
-
+export interface SearchMovieProps{
+    setSearch: (setSearchResults: Result[]) => void;
+    result: Result[];
+}
 
 
 export interface SearchMovie {

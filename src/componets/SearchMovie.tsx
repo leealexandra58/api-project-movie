@@ -1,13 +1,12 @@
 import React from "react";
 import { useContext, useEffect, useState } from "react";
-import { getMoviesApi } from "../services/MovieApi"
-import { Movie } from "../models/Movie"
 import "./MovieList.css"
 import { Result } from "../models/SeachMovie";
 import { getSearchMovies } from "../services/SearchServices";
 import { SearchFavContext } from "../context/SearchFavContext";
 import { BsStar, BsFillStarFill } from "react-icons/bs";
 import "./SearchMovie.css"
+import { Link } from "react-router-dom";
 
 
 export function SearchMovie() {
@@ -15,17 +14,9 @@ export function SearchMovie() {
     const [searchInput, setSearchInput] = useState("")
     const [results, setSearchResults] = useState<Result[]>([])
     const { searchFav, addSearchFav, removeSearchFav } = useContext(SearchFavContext);
-    const [movieList, setMovieList] = useState<Movie[]>([])
     const [filter, setFilter] = useState('');
     
-    useEffect(()=>{
-  
-      getMoviesApi().then((response)=>{
-        console.log(response.data.results);
-        const {data} = response
-        setMovieList(response.data.results)
-      })
-    },[])
+ 
 
     const searchFavoritesClicked = (id: number) => {
         const clicked = searchFav.some((results: Result) => results.id === id);
@@ -63,10 +54,7 @@ export function SearchMovie() {
         return(
           <div className='movie-card'>
             <p className ="image">
-              <img 
-              src={`https://image.tmdb.org/t/p/w1280${results.poster_path}`}
-              alt= {results.title}
-              />
+            <Link to = {`/moviedisplay/${results.id}`}><img  src= {`https://image.tmdb.org/t/p/original`+results.poster_path} alt={results.title}/></Link>
             </p>
             <p className="movie-title">{results.title}</p>
 
@@ -86,10 +74,6 @@ export function SearchMovie() {
       })}
       </div>
       
-        
-  
-        
-        
         </div>
       )};
   

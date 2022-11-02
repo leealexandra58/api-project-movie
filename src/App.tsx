@@ -11,7 +11,8 @@ import FavoritePage from './componets/FavoritePage';
 // import Filter from './componets/Filter';
 // import  SearchMovie from './componets/SearchMovie';
 // import FilterMovie from './componets/Filter';import MovieCard from './componets/MovieCard';
-import MovieCard from './componets/MovieCard';
+import MovieList from './componets/MovieList';
+import { Result } from './models/SeachMovie';
  
 function App() {
  
@@ -72,6 +73,7 @@ function App() {
 
     return name
   }
+ 
   
   return (
     <div className="App">
@@ -80,8 +82,8 @@ function App() {
         <Header></Header>
         
       <Routes>
-          <Route path="/" element={<MovieCard movieList={topRated} genreName={genreName}/>}/>
-        <Route path='/search' element={<SearchMovie></SearchMovie>}/>
+          <Route path="/" element={<MovieList movieList={topRated} genreName={genreName}/>}/>
+        <Route path='/search' element={<SearchMovie ></SearchMovie>}/>
         <Route path="/favorites" element={<FavoritePage/>}/>
           <Route path="/moviedisplay/:id" element={<MovieDisplay movieList={topRated} genreName={genreName}/>}/>
       </Routes>
