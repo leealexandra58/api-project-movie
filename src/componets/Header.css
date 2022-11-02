@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     box-shadow: rgba(192, 193, 196, 0.955) 0px 10px 10px -10px;
+    text-decoration: overline;
 }
 
 
