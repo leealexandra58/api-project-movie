@@ -6,11 +6,13 @@ import './FavoritePage.css'
 const FavoritePage = () => {
   return (
     <div>
-      <h2>Home Page Favorites</h2>
-      <HomeFav></HomeFav>
+      <h2>Favorites</h2>
+      <div className='favorites'>
+        <HomeFav></HomeFav>
 
-      <h2>Searched Favorites</h2>
-      <SearchFav></SearchFav>
+        <SearchFav></SearchFav>
+      </div>
+
     </div>
   )
 }

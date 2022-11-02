@@ -5,6 +5,7 @@ import { SearchMovie} from "../models/SeachMovie";
 
 
 export const getSearchMovies = (movieValue: string) =>{
-    return axios.get<SearchMovie>(`https://api.themoviedb.org/3/search/movie?api_key=dcbd5c64e218546da44ef4a64748d7df&include_adult=false&query=${movieValue}`
+    const apiKey = process.env.REACT_APP_MOVIE_API_KEY || "";
+    return axios.get<SearchMovie>(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&include_adult=false&query=${movieValue}`
     );
 }
