@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import "./MovieList.css"
 import { Result, SearchMovieProps } from "../models/SeachMovie";
 import { getSearchMovies } from "../services/SearchServices";

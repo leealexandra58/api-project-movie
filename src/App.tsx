@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-// import Header from './componets/Header';
 import MovieDisplay from "./componets/MovieDisplay";
 import { Movie } from './models/Movie';
 import {  getTopRated } from './services/MovieApi';
 import SearchMovie from './componets/SearchMovie';
 import Header from './componets/Header';
 import FavoritePage from './componets/FavoritePage';
-// import Filter from './componets/Filter';
-// import  SearchMovie from './componets/SearchMovie';
-// import FilterMovie from './componets/Filter';import MovieCard from './componets/MovieCard';
 import MovieList from './componets/MovieList';
 import { Result } from './models/SeachMovie';
  

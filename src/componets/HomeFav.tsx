@@ -2,8 +2,6 @@ import React, { useContext } from 'react';
 import { FavoritesContext } from "../context/FavoritesContext";
 import { Movie } from "../models/Movie"
 import { CiSquareRemove } from "react-icons/ci";
-import { SearchFavContext } from '../context/SearchFavContext';
-import { Result } from '../models/SeachMovie';
 import { Link } from "react-router-dom";
 
 

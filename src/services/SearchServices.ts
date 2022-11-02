@@ -1,6 +1,5 @@
 
 import axios from "axios";
-import MovieList from "../componets/MovieList";
 import { SearchMovie} from "../models/SeachMovie";
 
 

@@ -1,11 +1,9 @@
 import React from "react";
-import { useEffect, useContext, useState } from "react";
-import { getTopRated } from "../services/MovieApi"
+import { useContext} from "react";
 import { Movie, MovieCardProps } from "../models/Movie"
 import "./MovieList.css"
 import { FavoritesContext } from "../context/FavoritesContext";
 import { BsStar, BsFillStarFill } from "react-icons/bs";
-import MovieCard from "./MovieCard";
 import { Link } from "react-router-dom";
 
 
