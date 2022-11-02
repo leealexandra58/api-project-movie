@@ -24,7 +24,7 @@ img:active {
 
 
 .fav-btn {
-    font-size: 10px;
+    font-size: 12px;
     background-color: transparent;
     cursor: pointer; 
     border: transparent;
@@ -32,17 +32,9 @@ img:active {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.fav-btn:hover {
-    transform: scale(1.2);
-}
-
-.fav-btn:active {
-    transform: scale(0.8);
-}
-
 .movie-title {
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -79,7 +71,7 @@ img:active {
         transition: 0.2s ease;
         bottom: 0;
         opacity: 0;
-        font-size: 20px;
+        font-size: 18px;
         padding: 20px;
         text-align: center;
         cursor: default;
@@ -97,7 +89,15 @@ img:active {
 
     .movie-title {
         text-align: center;
-        font-size: 13px;
+        font-size: 18px;
+    }
+
+    .fav-btn:hover {
+        transform: scale(1.2);
+    }
+    
+    .fav-btn:active {
+        transform: scale(0.8);
     }
 
 }
