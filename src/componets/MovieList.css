@@ -1,10 +1,10 @@
 img {
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
     border: white solid 1px;
 }
 
-img:hover {
+img:active {
     border: rgb(255, 123, 0) solid 1px;
 }
 
@@ -14,18 +14,6 @@ img:hover {
     position: relative;
 }
 
-.movie-card:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.movie-card:hover .overlay {
-    opacity: 1;
-}
-
-.movie-card:hover .movie-title {
-    display: none;
-}
 
 .MovieList {
     display: flex;
@@ -34,31 +22,13 @@ img:hover {
     align-items: center;
 }
 
-.overlay {
-    position: absolute;
-    background-color: rgb(255, 123, 0);
-    width: 212px;
-    height: 35px;
-    transition: 0.2s ease;
-    bottom: 0;
-    opacity: 0;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    cursor: default;
-}
-
-
-.overlay:hover {
-    border: white solid 1px;
-}
 
 .fav-btn {
-    font-size: 13px;
+    font-size: 10px;
     background-color: transparent;
     cursor: pointer; 
     border: transparent;
-    color: white;
+    color: rgb(255, 123, 0);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -72,4 +42,62 @@ img:hover {
 
 .movie-title {
     text-align: center;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+
+    img {
+        width: 250px;
+        height: 250px;
+        border: white solid 1px;
+    }
+    
+
+    img:hover {
+        border: rgb(255, 123, 0) solid 1px;
+    }
+
+    .movie-card:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .movie-card:hover .overlay {
+        opacity: 1;
+    }
+
+    .movie-card:hover .movie-title {
+        display: none;
+    }
+
+    .overlay {
+        position: absolute;
+        background-color: rgb(255, 123, 0);
+        width: 212px;
+        height: 35px;
+        transition: 0.2s ease;
+        bottom: 0;
+        opacity: 0;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        cursor: default;
+    }
+
+    .overlay:hover {
+        border: white solid 1px;
+    }
+
+    .fav-btn {
+        color: white;
+        border: transparent;
+        font-size: 13px;
+    }
+
+    .movie-title {
+        text-align: center;
+        font-size: 13px;
+    }
+
 }

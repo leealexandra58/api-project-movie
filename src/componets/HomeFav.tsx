@@ -21,7 +21,7 @@ export const HomeFav = () => {
             {favorites.length > 0 ? (favorites.map((movie) => (
           <div className="favorite-card" key={movie.id}>
             <div className="img-title">
-              <p className="image"><img  src= {`https://image.tmdb.org/t/p/original`+movie.backdrop_path} alt={movie.title}/></p>
+            <p className="image"><img  src= {`https://image.tmdb.org/t/p/original`+movie.backdrop_path} alt={movie.title}/></p>
               <p className="movie-title">{movie.title}</p>
               </div>
               {favoritesClicked(movie.id) ? (

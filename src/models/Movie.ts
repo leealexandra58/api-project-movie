@@ -1,5 +1,4 @@
 
-
 export interface Movie{
     title: string;
     release_date: string;
@@ -15,3 +14,4 @@ export interface Genre{
     id: number;
     name: string;
 }
+ 

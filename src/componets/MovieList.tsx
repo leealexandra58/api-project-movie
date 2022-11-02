@@ -36,7 +36,7 @@ export function MovieList() {
 
           <div className="overlay">
             {favoritesClicked(movie.id) ? (
-            <button className="fav-btn" onClick={() => removeFavorite(movie.id)}>
+            <button className="fav-btn rem-btn" onClick={() => removeFavorite(movie.id)}>
               <BsFillStarFill /> Remove From Favorites
             </button>
             ) : (
