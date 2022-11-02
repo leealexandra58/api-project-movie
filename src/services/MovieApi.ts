@@ -1,12 +1,7 @@
-
-
 import axios from "axios";
-import { Movie } from "../models/Movie";
-
-
-
-
-export function getMoviesApi() {
-    return axios.get('https://api.themoviedb.org/3/movie/top_rated?api_key=dcbd5c64e218546da44ef4a64748d7df&include_adult=false');
+ 
+export function getTopRated() {
+    const apiKey = process.env.REACT_APP_MOVIE_API_KEY || "";
+    return axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&include_adult=false`);
 }
 

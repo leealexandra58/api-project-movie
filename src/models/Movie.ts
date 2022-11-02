@@ -1,4 +1,3 @@
-
 export interface MovieCardProps{
     movieList: Movie[];
     genreName: (genre_ids: number) => string;
@@ -14,4 +13,3 @@ export interface Movie{
     vote_count: number;
     overview:string;
 }
- 

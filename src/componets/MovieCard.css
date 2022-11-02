@@ -1,0 +1,21 @@
+.MovieCard{
+    display:flex;
+    flex-wrap: wrap;
+}
+ 
+div{
+    margin: 22.2px;
+}
+
+h2{
+    font-size: 40px;
+    text-align: left;
+    color: #f47521;
+    padding-bottom: 8px;
+    background-image: linear-gradient(to right,#213944,#2abdbb);
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
