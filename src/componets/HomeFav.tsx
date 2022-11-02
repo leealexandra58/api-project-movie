@@ -2,12 +2,11 @@ import React, { useContext } from 'react';
 import { FavoritesContext } from "../context/FavoritesContext";
 import { Movie } from "../models/Movie"
 import { CiSquareRemove } from "react-icons/ci";
-import "./Favorites.css"
 import { SearchFavContext } from '../context/SearchFavContext';
 import { Result } from '../models/SeachMovie';
 
 
-export const Favorites = () => {
+export const HomeFav = () => {
 
     const { favorites, addFavorite, removeFavorite } = useContext(FavoritesContext);
 
