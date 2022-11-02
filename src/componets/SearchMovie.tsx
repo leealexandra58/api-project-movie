@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext, useEffect, useState } from "react";
 import "./MovieList.css"
-import { Result } from "../models/SeachMovie";
+import { Result, SearchMovieProps } from "../models/SeachMovie";
 import { getSearchMovies } from "../services/SearchServices";
 import { SearchFavContext } from "../context/SearchFavContext";
 import { BsStar, BsFillStarFill } from "react-icons/bs";
@@ -9,10 +9,9 @@ import "./SearchMovie.css"
 import { Link } from "react-router-dom";
 
 
-export function SearchMovie() {
-
+export function SearchMovie({results, setSearchResults}:SearchMovieProps) {
     const [searchInput, setSearchInput] = useState("")
-    const [results, setSearchResults] = useState<Result[]>([])
+   
     const { searchFav, addSearchFav, removeSearchFav } = useContext(SearchFavContext);
     const [filter, setFilter] = useState('');
     
@@ -74,6 +73,7 @@ export function SearchMovie() {
       })}
       </div>
       
+
         </div>
       )};
   

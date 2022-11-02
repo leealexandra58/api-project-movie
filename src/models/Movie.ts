@@ -1,5 +1,8 @@
+import { Result } from "./SeachMovie";
+
 export interface MovieCardProps{
-    movieList: Movie[];
+    topRated: Movie[];
+    results: Result[];
     genreName: (genre_ids: number) => string;
 }
  

@@ -4,6 +4,7 @@ import { Movie } from "../models/Movie"
 import { CiSquareRemove } from "react-icons/ci";
 import { SearchFavContext } from '../context/SearchFavContext';
 import { Result } from '../models/SeachMovie';
+import { Link } from 'react-router-dom';
 
 
 export const SearchFav = () => {
@@ -21,7 +22,7 @@ export const SearchFav = () => {
         {searchFav.length > 0 ? (searchFav.map((movie) => (
         <div className="favorite-card" key={movie.id}>
         <div className="img-title">
-            <p className="image"><img  src= {`https://image.tmdb.org/t/p/w1280${movie.poster_path}`} alt={movie.title}/></p>
+            <Link to= {`/moviedisplay/${movie.id}`}><p className="image"><img  src= {`https://image.tmdb.org/t/p/w1280${movie.poster_path}`} alt={movie.title}/></p></Link>
             <p className="movie-title">{movie.title}</p>
     </div>
     {searchFavoritesClicked(movie.id) ? (

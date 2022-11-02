@@ -1,6 +1,6 @@
 export interface SearchMovieProps{
-    setSearch: (setSearchResults: Result[]) => void;
-    result: Result[];
+    setSearchResults: (result:Result[]) => void;
+    results: Result[];
 }
 
 
@@ -19,6 +19,9 @@ export interface Result {
     release_date: string;
     title: string;
     id: number;
+    vote_average: number;
+    vote_count: number;
+    genre_ids: number[];
 }
 
 export interface Genre{

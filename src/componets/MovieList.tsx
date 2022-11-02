@@ -9,7 +9,7 @@ import MovieCard from "./MovieCard";
 import { Link } from "react-router-dom";
 
 
-export function MovieList({movieList, genreName}:MovieCardProps) {
+export function MovieList({topRated, genreName}:MovieCardProps) {
 
   const { favorites, addFavorite, removeFavorite } = useContext(FavoritesContext);
 
@@ -30,7 +30,7 @@ export function MovieList({movieList, genreName}:MovieCardProps) {
 
 <div className="MovieList">
 
-      {movieList.map((movie) => (
+      {topRated.map((movie) => (
         <div className="movie-card" key={movie.id}>
           <div>
           <Link to = {`/moviedisplay/${movie.id}`}><img  src= {`https://image.tmdb.org/t/p/original`+movie.backdrop_path} alt="Movie Cover"/></Link>

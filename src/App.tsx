@@ -74,7 +74,9 @@ function App() {
     return name
   }
  
+  const [results, setSearchResults] = useState<Result[]>([])
   
+
   return (
     <div className="App">
       <Router>
@@ -82,10 +84,10 @@ function App() {
         <Header></Header>
         
       <Routes>
-          <Route path="/" element={<MovieList movieList={topRated} genreName={genreName}/>}/>
-        <Route path='/search' element={<SearchMovie ></SearchMovie>}/>
+          <Route path="/" element={<MovieList results ={results} topRated={topRated} genreName={genreName}/>}/>
+        <Route path='/search' element={<SearchMovie results={results} setSearchResults={setSearchResults} ></SearchMovie>}/>
         <Route path="/favorites" element={<FavoritePage/>}/>
-          <Route path="/moviedisplay/:id" element={<MovieDisplay movieList={topRated} genreName={genreName}/>}/>
+          <Route path="/moviedisplay/:id" element={<MovieDisplay results={results} topRated={topRated} genreName={genreName}/>}/>
       </Routes>
 
     </Router>
