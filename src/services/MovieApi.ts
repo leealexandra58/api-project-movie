@@ -7,8 +7,6 @@ import { Movie } from "../models/Movie";
 
 
 export function getMoviesApi() {
-    return axios.get('https://api.themoviedb.org/3/movie/top_rated?api_key=94537c011511d5109a7ca20f337286f3'
-    
-    );
+    return axios.get('https://api.themoviedb.org/3/movie/top_rated?api_key=dcbd5c64e218546da44ef4a64748d7df&include_adult=false');
 }
 

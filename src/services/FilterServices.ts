@@ -6,11 +6,11 @@ import { SearchMovie, Genre} from "../models/SeachMovie";
 
 
 export const getFilterMovies = (movieValue: string) =>{
-    return axios.get<SearchMovie>(`https://api.themoviedb.org/3/search/movie?api_key=94537c011511d5109a7ca20f337286f3&query=${movieValue}`
+    return axios.get<SearchMovie>(`https://api.themoviedb.org/3/search/movie?api_key=dcbd5c64e218546da44ef4a64748d7df&query=${movieValue}`
     );
 }
 
 export const getGenre = () =>{
-    return axios.get(`https://api.themoviedb.org/3/genre/movie/list?api_key=94537c011511d5109a7ca20f337286f3&language=en-US`)
+    return axios.get(`https://api.themoviedb.org/3/genre/movie/list?api_key=dcbd5c64e218546da44ef4a64748d7df&language=en-US`)
     ;
 }
