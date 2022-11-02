@@ -5,6 +5,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 // import Header from './componets/Header';
 import MovieList from './componets/MovieList';
+import SearchMovie from './componets/SearchMovie';
 // import Filter from './componets/Filter';
 // import  SearchMovie from './componets/SearchMovie';
 // import FilterMovie from './componets/Filter';
@@ -22,7 +23,7 @@ function App() {
        
           
 
-  {/* <Search></Search> */}
+   <SearchMovie></SearchMovie> 
       </Routes>
     </Router>
     </div>
